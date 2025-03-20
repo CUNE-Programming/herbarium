@@ -1,5 +1,5 @@
 from django.contrib import admin
-from models import Plant
+from digital_herbarium.models import Plant
 
 
 # Register your models here.
