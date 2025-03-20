@@ -43,6 +43,7 @@ CSRF_TRUSTED_ORIGINS = ["https://cune-herbarium.fly.dev"]
 # Application definition
 
 INSTALLED_APPS = [
+    "camera",
     "digital_herbarium",
     "django.contrib.admin",
     "django.contrib.auth",
