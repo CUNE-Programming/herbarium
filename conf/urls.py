@@ -22,7 +22,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("digital_herbarium/", include("digital_herbarium.urls")),
+    path("herbarium/", include("digital_herbarium.urls")),
     *static(settings.STATIC_URL, document_root=settings.STATIC_ROOT),
 ]
 

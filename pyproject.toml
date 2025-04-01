@@ -11,5 +11,7 @@ dependencies = [
     "environs[django]>=14.1.0",
     "pillow>=11.1.0",
     "psycopg[binary]>=3.2.4",
+    "rapidocr>=2.0.3",
+    "requests>=2.32.3",
     "whitenoise>=6.8.2",
 ]
