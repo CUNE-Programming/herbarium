@@ -1,0 +1,27 @@
+{% extends 'camera/base.html' %}
+
+{% block content %}
+<div class="container-fluid p-5 vh-100" style="background-color: #172b54;">
+    <div class="row h-100" style="height">
+        <!-- Load the info card pic-->
+        <div class="col-6" style="background-color:#94b9fc;">
+            info card pic will appear here
+
+        </div>
+        <!-- include the AI text section and form to fill in-->
+        <div class="col-6 bg-success">
+            <div class="row bg-primary-subtle h-50">
+            
+                raw text from AI
+
+            </div>
+            <div class="row h-50 p-3" style="background-color:rgb(237, 241, 245); border-style: dashed; border-color: #376fdd; border-width:0.3rem;">
+            
+                The form for the user to copy past/ type info card information
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
