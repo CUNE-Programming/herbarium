@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.views import generic
-from camera.forms.forms import PlantImageForm
 from digital_herbarium.models import Plant
 
 
@@ -12,10 +11,3 @@ def home(request):
     return render(request, template_name, context)
 
 
-class PlantImageFormView(generic.FormView):
-    form_class = PlantImageForm
-    template_name = "digital_herbarium/base.html"
-
-    def form_valid(self, form: PlantImageForm):
-        form.save()
-        return super().form_valid(form)

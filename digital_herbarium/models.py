@@ -5,7 +5,8 @@ from rapidocr import RapidOCR
 class Plant(models.Model):
     genus = models.CharField("genus", max_length=256, null=True, blank=True)
     species = models.CharField("species", max_length=256, null=True, blank=True)
-    image = models.ImageField(upload_to="images/", null=True, blank=True)
+    specimen_image = models.ImageField(upload_to="specimen_img/", null=True, blank=True)
+    info_card_image = models.ImageField(upload_to="info_card_img/", null=True, blank=True)
     common_name = models.CharField("common_name", max_length=256, null=True, blank=True)
     year = models.CharField("year", max_length=256, null=True, blank=True)
     collector = models.CharField("collector", max_length=256, null=True, blank=True)
