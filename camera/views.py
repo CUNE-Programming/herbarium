@@ -13,3 +13,9 @@ def img_process(request):
     context = {}
 
     return render(request, template_name, context)
+
+def list(request):
+    template_name = "camera/list.html"
+    context = {}
+
+    return render(request, template_name, context)

@@ -5,5 +5,6 @@ app_name = "camera"
 urlpatterns = [
     path("home", views.home),
     path("img_process", views.img_process),
+    path("list", views.list),
     
 ]
